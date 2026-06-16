@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
 
     <!-- Awan Dekorasi -->
     <div class="cloud cloud1"></div>
@@ -45,61 +46,62 @@
             </a>
         </div>
     </header>
+<section id="games">
+    <h2 class="games-section-title">SELECT GAME</h2>
 
-    <!-- SECTION DAFTAR GAME -->
-    <section class="games" id="games">
-        <h1 class="title">MY GAMES</h1>
-
-        <div class="game-list">
-
-            <!-- Card 1: GameCloud -->
-            <div class="card">
-                <div class="card-tag tag-blue">COLLECTION</div>
-                <img src="GameCloud icon.png" alt="GameCloud">
+    <div class="slider-container">
+        <div class="slider-track">
+            
+            <div class="card" id="game1">
+                <span class="card-tag tag-blue">ACTION</span>
+                <img src="https://placehold.co/300x180/81D4FA/2E3A36?text=PIXEL+DASH" alt="Pixel Dash">
                 <div class="card-content">
-                    <h2>GameCloud</h2>
-                    <p>
-                        Mainkan game-game seru dari website yang dikumpulkan menjadi satu tempat.
-                    </p>
+                    <h2>PIXEL DASH</h2>
+                    <p>Lari cepat, hindari rintangan retro, dan kumpulkan poin tertinggi!</p>
                 </div>
-                <a href="GameCloud.zip" download class="download" onclick="downloadGame(event)">
-                    DOWNLOAD
-                </a>
+                <button class="download" onclick="showPopup()">DOWNLOAD</button>
             </div>
 
-            <!-- Card 2: Racing -->
-            <div class="card">
-                <div class="card-tag tag-pink">SPEED</div>
-                <img src="racing-icon.png" alt="Racing">
+            <div class="card" id="game2">
+                <span class="card-tag tag-pink">RPG</span>
+                <img src="GameCloud icon.png" alt="Dungeon X">
                 <div class="card-content">
-                    <h2>RACING</h2>
-                    <p>
-                        Balapan retro dengan gameplay cepat, mekanik simpel, dan sangat ringan.
-                    </p>
+                    <h2>Game Cloud</h2>
+                    <p>Simpan data game kamu di awan dan mainkan di mana saja dengan aman!</p>
                 </div>
-                <a href="RACING.ZIP" download class="download" onclick="downloadGame(event)">
-                    DOWNLOAD
-                </a>
+                <button class="download" onclick="showPopup()">DOWNLOAD</button>
             </div>
 
-            <!-- Card 3: Arcade -->
-            <div class="card">
-                <div class="card-tag tag-yellow">CLASSIC</div>
-                <img src="arcade-icon.png" alt="Arcade">
+            <div class="card" id="game3">
+                <span class="card-tag tag-yellow">ARCADE</span>
+                <img src="https://placehold.co/300x180/FFE082/2E3A36?text=SPACE+WAR" alt="Space War">
                 <div class="card-content">
-                    <h2>ARCADE</h2>
-                    <p>
-                        Uji ketangkasanmu dan cetak rekor tertinggi di game arcade klasik ini!
-                    </p>
+                    <h2>SPACE WAR</h2>
+                    <p>Tembak pasukan alien modern dan selamatkan galaksi kita!</p>
                 </div>
-                <a href="ARCADE.ZIP" download class="download" onclick="downloadGame(event)">
-                    DOWNLOAD
-                </a>
+                <button class="download" onclick="showPopup()">DOWNLOAD</button>
+            </div>
+
+            <div class="card" id="game4">
+                <span class="card-tag tag-blue">RPG</span>
+                <img src="https://placehold.co/300x180/F48FB1/2E3A36?text=DUNGEON+X" alt="Dungeon X">
+                <div class="card-content">
+                    <h2>DUNGEON X</h2>
+                    <p>Jelajahi gua bawah tanah penuh monster misterius dan harta karun.</p>
+                </div>
+                <button class="download" onclick="showPopup()">DOWNLOAD</button>
             </div>
 
         </div>
-    </section>
+    </div>
 
+    <div class="slider-nav">
+        <a href="#game1"></a>
+        <a href="#game2"></a>
+        <a href="#game3"></a>
+        <a href="#game4"></a>
+    </div>
+</section>
     <!-- SECTION ABOUT ME (FITUR BARU) -->
     <section class="about" id="about">
         <h1 class="title">ABOUT DEVELOPER</h1>
